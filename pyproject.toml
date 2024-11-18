@@ -26,6 +26,7 @@ black = {extras = ["jupyter"], version = "^24.10.0"}
 tqdm = "^4.67.0"
 python-dotenv = "^1.0.1"
 scikit-learn = "^1.5.2"
+nbconvert = "^7.16.4"
 
 
 [build-system]
