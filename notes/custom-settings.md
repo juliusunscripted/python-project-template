@@ -47,6 +47,9 @@
     // do not reload old terminal session on next vscode start
     "terminal.integrated.persistentSessionReviveProcess": "never",
     // paste system clipboard text with p in command mode
-    "vim.useSystemClipboard": true
+    "vim.useSystemClipboard": true,
+    // always show useful icons: https://youtu.be/K-mjfCFaRmc?si=3T830tg9i3BL-6Ts
+    "workbench.editor.alwaysShowEditorActions": true,
+    "workbench.view.alwaysShowHeaderActions": true
 }
 ```
