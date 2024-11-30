@@ -17,7 +17,6 @@
         "editor.insertSpaces": false
     },
     "notebook.formatOnSave.enabled": true,
-    "jupyter.interactiveWindow.textEditor.executeSelection": true,
     "gitlens.plusFeatures.enabled": false,
     "gitlens.graph.statusBar.enabled": false,
     "python.terminal.activateEnvInCurrentTerminal": true,
@@ -25,5 +24,9 @@
     "files.exclude": {
         "**/*.pyc": {"when": "$(basename).py"}, 
         "**/__pycache__": true
-    }
+    },
+    "jupyter.interactiveWindow.textEditor.executeSelection": true,
+    "jupyter.interactiveWindow.textEditor.magicCommandsAsComments": true,
+    "interactiveWindow.collapseCellInputCode": "never",
+    "interactiveWindow.executeWithShiftEnter": true
 }
