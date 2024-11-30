@@ -48,7 +48,7 @@
     "terminal.integrated.persistentSessionReviveProcess": "never",
     // paste system clipboard text with p in command mode
     "vim.useSystemClipboard": true,
-    // always show useful icons: https://youtu.be/K-mjfCFaRmc?si=3T830tg9i3BL-6Ts
+    // always show useful action icons: https://youtu.be/K-mjfCFaRmc?si=3T830tg9i3BL-6Ts
     "workbench.editor.alwaysShowEditorActions": true,
     "workbench.view.alwaysShowHeaderActions": true
 }
