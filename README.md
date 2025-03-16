@@ -73,7 +73,8 @@ use this as a template for a python project
 
 #### setup poetry
 
-> poetry is used for dependency management
+> - poetry is used for dependency management
+> - commands of this guide work with poetry version 2.x
 
 - [install pipx](https://pipx.pypa.io/stable/installation/)
   ```bash
@@ -108,7 +109,7 @@ use this as a template for a python project
 	source .venv/bin/activate
 - install dependencies via poetry
 	```bash
-	poetry install --compile --sync
+	poetry sync --compile
 	```
 - install git notebook filter
 	- this filter avoids commiting jupyter notebook output to git
@@ -122,11 +123,26 @@ use this as a template for a python project
 	nbstripout --status
 	```
 
-- in the future you can update/install changed dependencies with this command again:
+## Edit dependencies
+
+You can change dependencies via `poetry` commands or manually by editing entries in `pyproject.toml`
+
+- in case you did a manual change run the following commands
+	- *fix lock file* (`poetry.lock`) after manual change of `pyproject.toml`
+		```bash
+		poetry lock
+		```
+	- install/update changed dependencies in `.venv`
 	```bash
-	poetry install --compile --sync
+	poetry sync --compile
 	```
 
+## Update poetry itself
+
+- in case you installed poetry via pipx:
+	```
+	pipx upgrade poetry
+	```
 
 ### Open python scripts or jupyter notebook
 
@@ -134,7 +150,7 @@ use this as a template for a python project
 - sometime the packages and code references are not detected at once
 	- in that case run the notebook one time and reload the vscode window
 		- `cmd + shift + p`
-		- `>Reload Window`
+		- `> Developer: Reload Window`
 - then everything *should work as expected*
 
 
