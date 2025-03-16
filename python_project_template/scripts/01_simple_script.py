@@ -1,9 +1,12 @@
 # run this python file in vscode via the play button on the top right (in case python extension is installed)
 # or use the following command (be sure .venv is actived (should be activated automatically))
-# python -m new_python_project.scripts.dev_01_simple_script
+# python -m python_project_template.scripts.dev_01_simple_script
 import structlog
 import time
-from new_python_project.fun_module import hi
+from python_project_template.fun_module import hi
+from python_project_template.utils import structlog_utils
+
+structlog_utils.configure_structlog()
 
 log = structlog.stdlib.get_logger()
 

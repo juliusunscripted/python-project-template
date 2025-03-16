@@ -1,4 +1,4 @@
-# new_python_project
+# python-project-template
 
 use this as a template for a python project
 
@@ -34,7 +34,7 @@ use this as a template for a python project
 		```toml
 		# previously
 		[tool.poetry]
-		name = "new-python-project"
+		name = "python-project-template"
 
 		# after change
 		[tool.poetry]
@@ -43,7 +43,7 @@ use this as a template for a python project
 - rename the python module folder in the root of you git repo
   ```
 	# previously
-	new_python_project
+	python_project_template
 
 	# after change
 	new_name_of_your_project_git_repo
@@ -54,8 +54,8 @@ use this as a template for a python project
 - rename the following parts in every python/jupyter notebook file:
   ```
 	# previously
-	from new_python_project
-	import new_python_project
+	from python_project_template
+	import python_project_template
 
 	# after change
 	from new_name_of_your_project_git_repo
