@@ -49,7 +49,7 @@ use this as a template for a python project
 	new_name_of_your_project_git_repo
 - fix poetry project lock file
   ```bash
-	poetry lock --no-update
+	poetry lock
 
 - rename the following parts in every python/jupyter notebook file:
   ```
